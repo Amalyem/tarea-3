@@ -1,0 +1,66 @@
+.contenedor{
+    background-color: darkseagreen;
+    padding: 10px;
+    font-size: 25px;
+    text-align: center;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 2fr 25fr 2fr;
+    grid-template-areas:"header header header" " side1 contenido side2" "footer footer footer" ;
+}
+.contenedor>div{
+    background-color: cornflowerblue;
+}
+.contenedor .header{
+    background-color: aquamarine;
+   /* grid-column: header;*/
+   grid-column-start: header;
+   grid-column-end: header;
+}
+.contenedor .side1{
+    background-color: darksalmon;
+    grid-column: side1;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 5px;
+  
+}
+.side1 .uno{
+    background-color: indigo;
+}
+.side1 .dos{
+    background-color: darkmagenta;
+}
+ 
+.contenedor .contenido{
+    background-color: hotpink;
+    grid-column: contenido;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 2fr 6fr 2fr;
+    grid-gap: 5px;
+    grid-template-areas: "cont1 cont2 cont3";
+}
+.contenido .cont1{
+    background-color: coral;
+    grid-column: cont1;
+}
+.contenido .cont2{
+    background-color: aquamarine;
+    grid-column: cont2;
+}
+.contenido .cont3{
+    background-color: darkolivegreen;
+    grid-column: cont3;
+}
+.contenedor .side2{
+    background-color: deepskyblue;
+    grid-column: side2;
+}
+.contenedor .footer{
+    background-color: lightpink;
+    grid-column: footer;
+}
